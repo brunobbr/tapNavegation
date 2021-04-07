@@ -34,7 +34,7 @@ main {
     width: 25rem;
 }
 
-#tabLink {
+.tabLink {
     margin-bottom: 2rem;
 }
 
@@ -62,4 +62,18 @@ button::after{
 
 button:hover::after, button.active::after {
     width: 100%;
+}
+
+.tabContent>section{
+    animation:  up 2s;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+    }
 }
